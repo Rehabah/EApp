@@ -1,0 +1,378 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.rescueapp.UserInfoActivity">
+
+    <TextView android:text="المعلومات الشخصية" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:textStyle="bold"
+        android:textColor="#ffc01913" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="الاسم الأول:"
+        android:id="@+id/first_name"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="#ffc01913" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/first_nameValue"
+        android:width="95dp"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/first_name"
+        android:layout_toLeftOf="@+id/first_name"
+        android:layout_toStartOf="@+id/first_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="الاسم الأخير:"
+        android:id="@+id/textView3"
+        android:textColor="#ffc01913"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/first_nameValue"
+        android:layout_toLeftOf="@+id/first_nameValue"
+        android:layout_toStartOf="@+id/first_nameValue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/last_nameValue"
+        android:width="95dp"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/first_nameValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="رقم الجوال:"
+        android:id="@+id/mobnumber"
+        android:textColor="#ffc01913"
+        android:textSize="16sp"
+        android:layout_below="@+id/first_name"
+        android:layout_toRightOf="@+id/first_nameValue"
+        android:layout_toEndOf="@+id/first_nameValue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/mobnumberValue"
+        android:layout_alignBottom="@+id/mobnumber"
+        android:layout_toLeftOf="@+id/mobnumber"
+        android:layout_toStartOf="@+id/mobnumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="الجنس:"
+        android:id="@+id/textView4"
+        android:textColor="#ffc01913"
+        android:textSize="16sp"
+        android:layout_below="@+id/mobnumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4"
+        android:id="@+id/radioSex">
+
+
+    </RadioGroup >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="أنثى"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/radioButton2"
+        android:layout_toLeftOf="@+id/radioButton"
+        android:layout_toStartOf="@+id/radioButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ذكر"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/radioButton2"
+        android:layout_toLeftOf="@+id/radioButton2"
+        android:layout_toStartOf="@+id/radioButton2" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:checked="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="تاريخ الميلاد:"
+        android:id="@+id/birth_day"
+        android:textSize="16sp"
+        android:textColor="#ffc01913"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignRight="@+id/radioButton"
+        android:layout_alignEnd="@+id/radioButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/birth_dayValue"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/birth_day"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="الأمراض المزمنة:"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/birth_dayValue"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="#ffc01913"
+        android:textStyle="bold" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignRight="@+id/checkBox"
+        android:layout_alignEnd="@+id/checkBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignRight="@+id/checkBox2"
+        android:layout_alignEnd="@+id/checkBox2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignRight="@+id/checkBox3"
+        android:layout_alignEnd="@+id/checkBox3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="أمراض القلب"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_toLeftOf="@+id/checkBox"
+        android:layout_toStartOf="@+id/checkBox"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="#ffc01913" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="مرض السكري"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/checkBox"
+        android:layout_toLeftOf="@+id/checkBox"
+        android:layout_toStartOf="@+id/checkBox"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="#ffc01913" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="أمراض الكلى"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/checkBox2"
+        android:layout_toLeftOf="@+id/checkBox2"
+        android:layout_toStartOf="@+id/checkBox2"
+        android:layout_marginTop="6dp"
+        android:textSize="16sp"
+        android:textColor="#ffc01913" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="الأمراض التنفسية"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_toLeftOf="@+id/checkBox3"
+        android:layout_toStartOf="@+id/checkBox3"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#ffc01913" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="أرقام الاتصال"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView12"
+        android:layout_alignRight="@+id/checkBox4"
+        android:layout_alignEnd="@+id/checkBox4"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="#ffc01913"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ضع هنا أرقام أقاربك وأصدقائك اللذين تود وصول رسالة لهم في حالة الطوارئ."
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:textColor="#ffc01913" />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الرقم الأول: "
+        android:id="@+id/numrelatives1"
+        android:textColor="#ffc01913"
+        android:textSize="16sp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignRight="@+id/textView15"
+        android:layout_alignEnd="@+id/textView15"
+        android:layout_marginTop="32dp" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/numrelativesValue"
+        android:layout_alignBottom="@+id/numrelatives1"
+        android:layout_toLeftOf="@+id/numrelatives1"
+        android:layout_toRightOf="@+id/last_nameValue"
+        android:layout_toEndOf="@+id/last_nameValue" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الرقم الثاني:"
+        android:id="@+id/numrelatives2"
+        android:textColor="#ffc01913"
+        android:textSize="16sp"
+        android:layout_above="@+id/button"
+        android:layout_alignRight="@+id/numrelatives1"
+        android:layout_alignEnd="@+id/numrelatives1"
+        android:layout_marginBottom="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/numrelativesValue2"
+        android:layout_alignBottom="@+id/numrelatives2"
+        android:layout_toLeftOf="@+id/textView14"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أكمل"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:width="175dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:background="#ffc01913"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:onClick="save" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تخطي"
+        android:id="@+id/button2"
+        android:width="175dp"
+        android:background="#ffc01913"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:onClick="skip"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>

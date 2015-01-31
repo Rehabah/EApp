@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ResApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="welcome">نساعدك في طلب الإنقاذ في حالات الطوارئ ونبلّغ أقرباءك أو أصدقاءك ، بالإضافة إلى عرض الإسعافات الأولية المناسبة</string>
+    <string name="title_activity_update">لتحديث رقم أحد أقاربك الرجاء إدخال البيانات التالية و إذا أردت الاطلاع على بعض المعلومات يمكنك ذلك بالضغط على إحدى الأيقونات الموجودة في أسفل الصفحة</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="radio_male">ذكر</string>
+    <string name="radio_female">أنثى</string>
+
+</resources>

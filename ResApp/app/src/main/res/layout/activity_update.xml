@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.rescueapp.UpdateActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_activity_update"
+        android:id="@+id/textView20"
+        android:textColor="#ffc01913"
+        android:textStyle="bold"
+        android:textSize="@dimen/abc_text_size_headline_material"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="55dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="الرقم القديم:"
+        android:id="@+id/mobnumber"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textView20"
+        android:layout_alignRight="@+id/textView20"
+        android:layout_alignEnd="@+id/textView20"
+        android:textColor="#ffc01913"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/phonValue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/mobnumberValue"
+        android:layout_alignTop="@+id/mobnumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="الرقم الجديد:"
+        android:id="@+id/phon"
+        android:textStyle="bold"
+        android:textColor="#ffc01913"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_below="@+id/textView20"
+        android:layout_alignRight="@+id/mobnumber"
+        android:layout_alignEnd="@+id/mobnumber"
+        android:layout_marginTop="121dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phonValue"
+        android:layout_alignTop="@+id/phon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تحديث"
+        android:id="@+id/button"
+        android:width="100dp"
+        android:height="90dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:background="#ffc01913"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:onClick="update_contact"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عرض معلومات المستخدم"
+        android:id="@+id/button4"
+        android:width="100dp"
+        android:height="90dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:background="#ffc01913"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:onClick="view_user_data"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عرض معلومات الأقارب"
+        android:id="@+id/button5"
+        android:width="100dp"
+        android:height="90dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:background="#ffc01913"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:onClick="view_contacts_data"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+
